@@ -77,8 +77,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-meps-reduced-example-data-v0.3.0
 
-      # Input data for the mdp examples, downloaded through fsspec simplecache.
-      # The cache resets when an mdp datastore config changes or v1 is bumped.
       - name: Cache mdp input data
         uses: actions/cache@v4
         with:
